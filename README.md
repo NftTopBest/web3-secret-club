@@ -6,7 +6,7 @@ With W3SC(Web3 Secret Club), anyone can earn CryptoCoin on IPFS && Any EVM Chain
 
 ## Links
 
-* [Demo Video](#)
+* [Demo Video](https://www.loom.com/share/93536134f1564167a5c5c98a279614cd)
 * [DApp Demo](https://secret3.nfttop.best/club/1/bafkreibehkc46yptzfje7ohyqqe2m4k3ycskm37smgjyyzg6wyklltzmw4)
 * [DApp Source Code](https://github.com/NftTopBest/web3-secret-club/blob/main/web-app)
 * [Contact Source Code](https://github.com/NftTopBest/web3-secret-club/blob/main/solidity-contract/Secret3.sol)
@@ -88,6 +88,6 @@ A web3 secret club can be use for any kinds of creator economy relative group, m
 * Build more UI/UX for different areas/tracks users
 * Marketing && Promotion for the platform
 * Improve the UX/UI design
-* Make a greate Landing page
+* Make a great Landing page
 * Find 100 NFT KOLs to use our platform and get earned
 * Help top 100 users to get earned with $1M worths of Crypto Assets
