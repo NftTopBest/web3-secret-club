@@ -6,45 +6,46 @@ With W3SC(Web3 Secret Club), anyone can earn CryptoCoin on IPFS && Any EVM Chain
 
 ## Links
 
-* [Online Demo](#)
-* [Contact Deployment](#)
+* [Online Demo](https://secret3.nfttop.best/club/1/bafkreibehkc46yptzfje7ohyqqe2m4k3ycskm37smgjyyzg6wyklltzmw4)
+* [Contact Source Code](https://github.com/NftTopBest/web3-secret-club/blob/main/solidity-contract/Secret3.sol)
+* [Contact Deployment](https://mumbai.polygonscan.com/address/0xCD8eC2f6787458C4476931623a71B97D85dAEedD)
 * [Demo Video](#)
 
 ## Features
 
 * creators can manage their web3 secret clubs
-  * create new club [source](./web-app/src/components/secret3/dialog/createCategory.vue)
+  * create new club [source](https://github.com/NftTopBest/web3-secret-club/blob/main/web-app/src/components/secret3/dialog/createCategory.vue)
     * club logo (upload to IPFS)
     * basic price (for the token sell price)
     * invite commission (for club owner promote marketing)
     * all data pack into json and submit to IPFS via `NFT.Stroage` SDK
-  * add item for the Club [source](./web-app/src/components/secret3/dialog/createItem.vue)
+  * add item for the Club [source](https://github.com/NftTopBest/web3-secret-club/blob/main/web-app/src/components/secret3/dialog/createItem.vue)
     * club item has banner, title, intro, item unlock minimum token number, encrypted content fields
     * all the fields get packed into an json and upload to IPFS
       * secret content get encrypted before packed into json
     * creator can also add their own NFT contract as additional decrypt condition for club member
     * currently as POC only support text content, will support many more formats for the next step: music/movie/images
-* audiences can join clubs and get club secret content by mint club tokens (ERC1155 tokens provide by platform)  [source](./web-app/src/components/secret3/items.vue)
+* audiences can join clubs and get club secret content by mint club tokens (ERC1155 tokens provide by platform)  [source](https://github.com/NftTopBest/web3-secret-club/blob/main/web-app/src/components/secret3/items.vue)
   * follow/join club by mint at least 1 token of club NFT
   * invite friends to join club and get commission rewards
   * mint club NFT tokens
     * total pay amount = basicPrice * tokenAmount
     * inviter get ${inviteCommission}% of the payment
   * check club secret content items list
-  * get decrypted content automaticly  [source](./web-app/src/pages/secret3/club/%5BtokenId%5D/%5Bcid%5D.vue)
+  * get decrypted content automaticly  [source](https://github.com/NftTopBest/web3-secret-club/blob/main/web-app/src/pages/secret3/club/%5BtokenId%5D/%5Bcid%5D.vue)
 * platform get 1% fee for all of the token mint payments
-* contract Build base on the `ERC1155` [source](./solidity-contract/Secret3.sol)
+* contract Build base on the `ERC1155` [source](https://github.com/NftTopBest/web3-secret-club/blob/main/solidity-contract/Secret3.sol)
 
 ## How it works
 
 In web3 secret club, we have two kinds of users: creators and audiences, creator can create secret club and secret items in club,
 while the audiences can follow/join club and decrypt secret items if they meet the unlock conditions.
 
-<img src="./1.user-action.png" />
+<img src="https://github.com/NftTopBest/web3-secret-club/blob/main/1.user-action.png" />
 
 Audiences follow/join club by mint any number of club NFT tokens(ERC1155 token provide by platform), decrypt secret item automaticly if they have enough tokens.
 
-<img src="./2.action-flow.png" />
+<img src="https://github.com/NftTopBest/web3-secret-club/blob/main/2.action-flow.png" />
 
 A web3 secret club can be use for any kinds of creator economy relative group, media content, memberships.
 
@@ -61,7 +62,7 @@ A web3 secret club can be use for any kinds of creator economy relative group, m
 * Sell your new emojis
 * Seriously, sell anything!
 
-<img src="./3.use-cases.png" />
+<img src="https://github.com/NftTopBest/web3-secret-club/blob/main/3.use-cases.png" />
 
 ## Application Tech Stack
 
