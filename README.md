@@ -6,10 +6,11 @@ With W3SC(Web3 Secret Club), anyone can earn CryptoCoin on IPFS && Any EVM Chain
 
 ## Links
 
-* [Online Demo](https://secret3.nfttop.best/club/1/bafkreibehkc46yptzfje7ohyqqe2m4k3ycskm37smgjyyzg6wyklltzmw4)
+* [Demo Video](#)
+* [DApp Demo](https://secret3.nfttop.best/club/1/bafkreibehkc46yptzfje7ohyqqe2m4k3ycskm37smgjyyzg6wyklltzmw4)
+* [DApp Source Code](https://github.com/NftTopBest/web3-secret-club/blob/main/web-app)
 * [Contact Source Code](https://github.com/NftTopBest/web3-secret-club/blob/main/solidity-contract/Secret3.sol)
 * [Contact Deployment](https://mumbai.polygonscan.com/address/0xCD8eC2f6787458C4476931623a71B97D85dAEedD)
-* [Demo Video](#)
 
 <img src="https://github.com/NftTopBest/web3-secret-club/raw/main/screenshot-1.png" />
 
@@ -20,7 +21,7 @@ With W3SC(Web3 Secret Club), anyone can earn CryptoCoin on IPFS && Any EVM Chain
     * club logo (upload to IPFS)
     * basic price (for the token sell price)
     * invite commission (for club owner promote marketing)
-    * all data pack into json and submit to IPFS via `NFT.Stroage` SDK
+    * all data pack into json and submit to IPFS via `NFT.Stroage` SDK [source](https://github.com/NftTopBest/web3-secret-club/blob/main/web-app/src/composables/useNFTStorage.ts)
   * add item for the Club [source](https://github.com/NftTopBest/web3-secret-club/blob/main/web-app/src/components/secret3/dialog/createItem.vue)
     * club item has banner, title, intro, item unlock minimum token number, encrypted content fields
     * all the fields get packed into an json and upload to IPFS
