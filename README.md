@@ -1,7 +1,55 @@
+# Web3 Secret Club
+
 ## What it does
 
-With W3SC(Web3 Secret Club), anyone can earn CryptoCoin on IPFS && Any EVM Chain on the Web3 world by selling anything. 
+With W3SC(Web3 Secret Club), anyone can earn CryptoCoin on IPFS && Any EVM Chain on the Web3 world by selling anything.
+
+## Links
+
+* [Online Demo](#)
+* [Contact Deployment](#)
+* [Demo Video](#)
+
+## Features
+
+* creators can manage their web3 secret clubs
+  * create new club
+    * club logo (upload to IPFS)
+    * basic price (for the token sell price)
+    * invite commission (for club owner promote marketing)
+    * all data pack into json and submit to IPFS via `NFT.Stroage` SDK
+  * add item for the Club
+    * club item has banner, title, intro, item unlock minimum token number, encrypted content fields
+    * all the fields get packed into an json and upload to IPFS
+      * secret content get encrypted before packed into json
+    * creator can also add their own NFT contract as additional decrypt condition for club member
+    * currently as POC only support text content, will support many more formats for the next step: music/movie/images
+* audiences can join clubs and get club secret content by mint club tokens (ERC1155 tokens provide by platform)
+  * follow/join club by mint at least 1 token of club NFT
+  * invite friends to join club and get commission rewards
+  * mint club NFT tokens
+    * total pay amount = basicPrice * tokenAmount
+    * inviter get ${inviteCommission}% of the payment
+  * check club secret content items list
+  * get decrypted content automaticly
+* platform get 1% fee for all of the token mint payments
+* contract Build base on the `ERC1155`
+
+## How it works
+
+In web3 secret club, we have two kinds of users: creators and audiences, creator can create secret club and secret items in club,
+while the audiences can follow/join club and decrypt secret items if they meet the unlock conditions.
+
+<img src="./1.user-action.png" />
+
+Audiences follow/join club by mint any number of club NFT tokens(ERC1155 token provide by platform), decrypt secret item automaticly if they have enough tokens.
+
+<img src="./2.action-flow.png" />
+
+A web3 secret club can be use for any kinds of creator economy relative group, media content, memberships.
+
 * Video lessons
+* Academic paper
 * Drawing & Painting as ERC721 NFTs
 * Fiction Books: Short stories, novellas, as NFT
 * Films as NFT
@@ -13,12 +61,26 @@ With W3SC(Web3 Secret Club), anyone can earn CryptoCoin on IPFS && Any EVM Chain
 * Sell your new emojis
 * Seriously, sell anything!
 
-## How we built it
+<img src="./3.use-cases.png" />
 
-## Challenges we ran into
+## Application Tech Stack
 
-## Accomplishments that we're proud of
+* [x] IPFS
+* [x] OpenZepplin
+* [x] ERC1155
+* [x] Hardhat
+* [x] Vercel
+* [x] TailwindCSS
+* [x] Vue3
+* [x] Pinia (state store)
+* [x] PWA
+* [x] Vite2
 
-## What we learned
+## What's next
 
-## What's next for Web3 Secret Club on IPFS
+* Build more UI/UX for different areas/tracks users
+* Marketing && Promotion for the platform
+* Improve the UX/UI design
+* Make a greate Landing page
+* Find 100 NFT KOLs to use our platform and get earned
+* Help top 100 users to get earned with $1M worths of Crypto Assets
