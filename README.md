@@ -13,27 +13,27 @@ With W3SC(Web3 Secret Club), anyone can earn CryptoCoin on IPFS && Any EVM Chain
 ## Features
 
 * creators can manage their web3 secret clubs
-  * create new club
+  * create new club [source](./web-app/src/components/secret3/dialog/createCategory.vue)
     * club logo (upload to IPFS)
     * basic price (for the token sell price)
     * invite commission (for club owner promote marketing)
     * all data pack into json and submit to IPFS via `NFT.Stroage` SDK
-  * add item for the Club
+  * add item for the Club [source](./web-app/src/components/secret3/dialog/createItem.vue)
     * club item has banner, title, intro, item unlock minimum token number, encrypted content fields
     * all the fields get packed into an json and upload to IPFS
       * secret content get encrypted before packed into json
     * creator can also add their own NFT contract as additional decrypt condition for club member
     * currently as POC only support text content, will support many more formats for the next step: music/movie/images
-* audiences can join clubs and get club secret content by mint club tokens (ERC1155 tokens provide by platform)
+* audiences can join clubs and get club secret content by mint club tokens (ERC1155 tokens provide by platform)  [source](./web-app/src/components/secret3/items.vue)
   * follow/join club by mint at least 1 token of club NFT
   * invite friends to join club and get commission rewards
   * mint club NFT tokens
     * total pay amount = basicPrice * tokenAmount
     * inviter get ${inviteCommission}% of the payment
   * check club secret content items list
-  * get decrypted content automaticly
+  * get decrypted content automaticly  [source](./web-app/src/pages/secret3/club/%5BtokenId%5D/%5Bcid%5D.vue)
 * platform get 1% fee for all of the token mint payments
-* contract Build base on the `ERC1155`
+* contract Build base on the `ERC1155` [source](./solidity-contract/Secret3.sol)
 
 ## How it works
 
